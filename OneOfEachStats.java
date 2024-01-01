@@ -27,14 +27,12 @@ public class OneOfEachStats {
 			while (b == false || g == false) {
 				// declare a random number either 0 or 1
 				int rnd = (int) (generator.nextDouble() * 2);
+				count++;
 				if (rnd == 0) {
 					b = true;
 				} else {
 					g = true;
 				}
-				count++;
-				System.out.println(count);
-
 			}
 			if (count == 2) {
 				child2++;
@@ -60,7 +58,7 @@ public class OneOfEachStats {
 				max = "the most common number of children is 4 or more";
 			}
 		}
-		System.out.println("Average: " + ExpAvg + " children to get at least one of each gender");
+		System.out.println("Average: " + ExpAvg + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + child2);
 		System.out.println("Number of families with 3 children: " + child3);
 		System.out.println("Number of families with 4 or more children: " + child4Plus);
