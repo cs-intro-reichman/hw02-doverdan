@@ -11,7 +11,7 @@ public class Perfect {
 		int sum = 0;
 
 		// checking if the number is perfect and creating a line for the answer.
-		String Ans = num + "is a perfect number since " + num + " = ";
+		String Ans = num + "is a perfect number since " + num + " = 1";
 		for (int i = 1; i < num; i++) {
 			if (num % i == 0) {
 				sum = sum + i;
