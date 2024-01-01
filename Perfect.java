@@ -8,7 +8,7 @@ public class Perfect {
 	public static void main(String[] args) {
 		// getting a number and declaring a variable for the sum.
 		int num = Integer.parseInt(args[0]);
-		int sum = 0;
+		int sum = 1;
 
 		// checking if the number is perfect and creating a line for the answer.
 		String Ans = num + "is a perfect number since " + num + " = 1";
