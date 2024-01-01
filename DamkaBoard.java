@@ -7,13 +7,13 @@ public class DamkaBoard {
 		int size = Integer.parseInt(args[0]);
 
 		// printing the board.
-		for (int row = 1; row < size; row++) {
+		for (int row = 1; row <= size; row++) {
 			// printing the current row.
 			if (row % 2 == 0) {
 				System.out.print(" ");
 			}
-			for (int col = 1; col <= row; col++) {
-				if (row < col) {
+			for (int col = 1; col <= size; col++) {
+				if (col < size) {
 					System.out.print("* ");
 				} else {
 					System.out.print("*");
