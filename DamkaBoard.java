@@ -9,11 +9,19 @@ public class DamkaBoard {
 		// printing the board.
 		for (int row = 0; row < size; row++) {
 			// printing the current row.
-			for (int column = 0; column < size; column++) {
-				System.out.print(" * ");
-
+			if (row % 2 == 0) {
+				System.out.print(" ");
 			}
-			// going to the next row.
+			for (int col = 0; col < size; col++) {
+				if (row < col) {
+					System.out.print("* ");
+				} else {
+					System.out.print("*");
+				}
+			}
+			if (row % 2 == 1) {
+				System.out.print(" ");
+			}
 			System.out.println();
 		}
 
