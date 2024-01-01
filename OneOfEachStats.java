@@ -50,12 +50,12 @@ public class OneOfEachStats {
 
 		String max = "";
 		if ((child2 > child3) && (child2 > child4Plus)) {
-			max = "the most common number of children is 2";
+			max = "The most common number of children is 2.";
 		} else {
 			if (child3 > child4Plus) {
-				max = "the most common number of children is 3";
+				max = "The most common number of children is 3.";
 			} else {
-				max = "the most common number of children is 4 or more";
+				max = "The most common number of children is 4 or more.";
 			}
 		}
 		System.out.println("Average: " + ExpAvg + " children to get at least one of each gender.");
